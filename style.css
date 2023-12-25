@@ -110,3 +110,17 @@ body{
         transform: translateX(0);
     }
 }
+
+
+button {
+        background-color: #06c006;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+}
+
+button:hover {
+        background-color: #06c006;
+
+}

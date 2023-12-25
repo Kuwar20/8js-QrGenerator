@@ -21,3 +21,17 @@ function handleKeyPress(event) {
         generateQr();
     }
 }
+
+function downloadQr() {
+    if (qrText.value.length > 0) {
+        // Create a temporary anchor element
+        var link = document.createElement('a');
+        link.href = qrImage.src;
+        link.download = 'qrcode.png'; // Set the desired file name and extension
+
+        // Simulate a click on the anchor to trigger the download
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+}
